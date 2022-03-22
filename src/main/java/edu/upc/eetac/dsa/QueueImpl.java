@@ -43,6 +43,16 @@ public class QueueImpl<E> implements Queue<E> {
 
     @Override
     public int size() {
-        return max;
+        return this.num;
+    }
+
+    public String getList() {
+
+        String l = "";
+
+        for (int i = 0; i < num; i++) {
+            l = l + this.List[i];
+        }
+        return l;
     }
 }

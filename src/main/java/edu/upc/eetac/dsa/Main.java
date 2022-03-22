@@ -10,23 +10,24 @@ public class Main {
             list.push(" buenos");
             list.push(" días. ");
 
-            System.out.println("Vemos el tamaño de la lista: " + list.size() + ".\t");
+            System.out.println("Vemos el tamaño de la lista actualmente: " + list.size() + ".\t");
 
             System.out.println("Ahora hacemos pop en cada elemento.\t");
 
-            System.out.println(list);
+            System.out.println(list.getList());
             list.pop();
-            System.out.println(list);
+            System.out.println(list.getList());
             list.pop();
-            System.out.println(list);
+            System.out.println(list.getList());
             list.pop();
 
         }
-        catch (FullQueueException full) {
-            full.printStackTrace();
+        catch (FullQueueException e) {
+            System.out.println(e.getMessage());
         }
-        catch (EmptyQueueException empty) {
-            empty.printStackTrace();
+
+        catch (EmptyQueueException e) {
+            System.out.println(e.getMessage());
         }
     }
 }
