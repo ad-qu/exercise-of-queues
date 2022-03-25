@@ -13,7 +13,7 @@ public class QueueImpl<E> implements Queue<E> {
 
     @Override
     public void push(E obj) throws FullQueueException {
-        if(this.num <= this.max)
+        if(this.num < this.max)
         {
             this.List[this.num] = obj;
             this.num++;

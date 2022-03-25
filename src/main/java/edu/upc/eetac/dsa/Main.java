@@ -2,7 +2,7 @@ package edu.upc.eetac.dsa;
 
 public class Main {
     public static void main(String[] args) {
-        QueueImpl<String> list = new QueueImpl<>(5);
+        QueueImpl<String> list = new QueueImpl<>(3);
         try{
             System.out.println("Ponemos en la lista las 3 palabras. \t");
 
